@@ -3,6 +3,10 @@ name = "napari-vidcrop"
 version = "0.1.0"
 description = "Video cropping"
 authors = ["Kushaan Gupta <gkushaan@rediffmail.com>"]
+classifiers = [
+    "Framework :: napari"
+]
+include = ["napari_vidcrop/napari.yaml"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -16,6 +20,9 @@ PyQt5 = "^5.15.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+
+[tool.poetry.plugins."napari.manifest"]
+"napari-vidcrop" = "napari_vidcrop:napari.yaml"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

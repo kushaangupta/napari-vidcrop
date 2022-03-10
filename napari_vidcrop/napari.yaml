@@ -1,0 +1,10 @@
+name: napari-vidcrop
+display_name: VidCrop
+contributions:
+  commands:
+    - id: napari-vidcrop.make_widget
+      python_name: napari_vidcrop:VideoCrop
+      title: VidCrop
+  widgets:
+    - command: napari-vidcrop.make_widget
+      display_name: Video Crop

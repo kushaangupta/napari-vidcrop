@@ -51,7 +51,6 @@ def _make_ffmpeg_cmd(
 
     return cmd
 
-
 @magicclass(widget_type="scrollable")
 class VideoCrop:
     IN_DIR = OUT_DIR = FILES = None
